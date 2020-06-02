@@ -34,7 +34,7 @@ rm /usr/bin/nvim
 curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 mv nvim.appimage /usr/bin/nvim
 chmod +x /usr/bin/nvim
-cp ./config/nvim/init.vim ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim && cp ./config/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -48,3 +48,8 @@ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 update
 apt install brave-browser
+
+printStage "Install >> Zoom"
+
+wget -O ~/tmp/zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
+apt install ~/tmp/zoom.deb
