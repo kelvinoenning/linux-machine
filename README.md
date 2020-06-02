@@ -1,4 +1,4 @@
-# my-linux-machine
+# linux-machine
 
 === WIP ===
 
