@@ -3,11 +3,6 @@ Plug 'morhetz/gruvbox'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-go', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -23,16 +18,12 @@ set background=dark
 
 set hidden
 set number
-" set relativenumber
 set inccommand=split
 set clipboard=unnamedplus
 " gf config
 set path+=**
 
 let mapleader=","
-
-" Enable mouse
-" set mouse=a
 
 " Saves and exit
 nnoremap <Leader>w :w<CR>
@@ -65,21 +56,3 @@ nnoremap <leader>8 :resize -10<CR>
 nnoremap <F7> :NERDTree<CR>
 
 let g:go_fmt_command = "goimports"
-
-" ===== +TERMINAL =====
-function! VTerm()
-	botright vsplit term://bash
-	startinsert
-endfunction
-
-nnoremap <leader>t :call VTerm()<cr>
-
-function! HTerm()
-	below split term://bash
-	startinsert
-endfunction
-
-nnoremap <leader>T :call HTerm()<cr>
-
-tnoremap <Esc> <C-\><C-n>
-" ===== -TERMINAL =====
