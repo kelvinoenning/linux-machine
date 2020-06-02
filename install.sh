@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if ! [ $(id -u) = 0 ]; then
+   echo "ERROR: Please run as root!"
+   exit 1
+fi
+
 printStage () {
    echo "\n\n====================\n"$1"\n====================\n\n"
 }
@@ -34,9 +39,9 @@ rm /usr/bin/nvim
 curl -O /tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 mv /tmp/nvim.appimage /usr/bin/nvim
 chmod +x /usr/bin/nvim
-mkdir -p ~/.config/nvim
+mkdir -p /home/${SUDO_USER}/.config/nvim
 cp ./config/nvim/init.vim ~/.config/nvim/init.vim
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+curl -fLo /home/${SUDO_USER}/.config/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 printStage "Install >> Silver Searcher"
