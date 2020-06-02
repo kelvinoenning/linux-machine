@@ -1,5 +1,7 @@
 # my-linux-machine
 
+=== WIP ===
+
 This repository represents an automatic installation of a working instance.
 
 This configuration does not represent the configuration of my current machine, and this repository is being created to help anyone who wants to quickly have a working instance previously configured.
@@ -7,20 +9,29 @@ This configuration does not represent the configuration of my current machine, a
 
 ## Configs
 
-* apt-transport-https
-* curl
-* git
-* silversearcher-ag
-* NeoVim
-   * Some configurations
-   * Plug
-      * morhetz/gruvbox
-      * terryma/vim-multiple-cursors
-      * neoclide/coc.nvim
-      * junegunn/fzf
-      * preservim/nerdtree
-      * tpope/vim-fugitive
-      * fatih/vim-go
-      * iamcco/markdown-preview.nvim
-* Brave browser
-* Zoom meeting
+- [x] apt-transport-https
+- [x] curl
+- [x] git
+- [x] silversearcher-ag
+- [ ] asdf
+   - [ ] nodejs | yarn 
+- [x] NeoVim
+   - [x] Some configurations
+   - [x] Plug
+      - [x] morhetz/gruvbox
+      - [x] terryma/vim-multiple-cursors
+      - [x] neoclide/coc.nvim
+      - [x] junegunn/fzf
+      - [x] preservim/nerdtree
+      - [x] tpope/vim-fugitive
+      - [x] fatih/vim-go
+      - [x] iamcco/markdown-preview.nvim
+      - [ ] Coc's plugins
+         - [x] nvim
+	 - [ ] tsserver
+	 - [ ] html
+	 - [ ] css
+	 - [ ] go
+	 - [ ] json
+- [x] Brave browser
+- [x] Zoom meeting
