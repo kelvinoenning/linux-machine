@@ -34,6 +34,7 @@ rm /usr/bin/nvim
 curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 mv nvim.appimage /usr/bin/nvim
 chmod +x /usr/bin/nvim
+cp ./config/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
