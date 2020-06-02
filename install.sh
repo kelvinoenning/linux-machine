@@ -22,11 +22,11 @@ upgrade
 
 printStage "Install >> curl"
 
-apt install apt-transport-https curl
+apt install apt-transport-https curl -y
 
 printStage "Install >> git"
 
-apt install git
+apt install git -y
 
 printStage "Install >> nvim"
 
@@ -40,14 +40,14 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 
 printStage "Install >> Silver Searcher"
 
-sudo apt-get install silversearcher-ag
+sudo apt-get install silversearcher-ag -y
 
 printStage "Install >> Brave browser"
 
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 update
-apt install brave-browser
+apt install brave-browser -y
 
 printStage "Install >> Zoom"
 
