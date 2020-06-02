@@ -28,10 +28,10 @@ This configuration does not represent the configuration of my current machine, a
       - [x] iamcco/markdown-preview.nvim
       - [ ] Coc's plugins
          - [x] nvim
-	 - [ ] tsserver
-	 - [ ] html
-	 - [ ] css
-	 - [ ] go
-	 - [ ] json
+         - [ ] tsserver
+         - [ ] html
+         - [ ] css
+         - [ ] go
+         - [ ] json
 - [x] Brave browser
 - [x] Zoom meeting
