@@ -56,3 +56,12 @@ nnoremap <leader>8 :resize -10<CR>
 nnoremap <F7> :NERDTree<CR>
 
 let g:go_fmt_command = "goimports"
+
+" ===== +TERMINAL =====
+" Open Vertical
+nnoremap <leader>vt :exec "botright vsplit \| :startinsert \| :terminal"<cr>
+" Open horizontal
+nnoremap <leader>ht :exec "below split \| :startinsert \| :terminal"<cr>
+" Normal Mode
+tnoremap <Esc> <C-\><C-n>
+" ===== -TERMINAL =====
