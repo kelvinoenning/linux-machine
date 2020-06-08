@@ -33,5 +33,5 @@ This configuration does not represent the configuration of my current machine, a
          - [ ] css
          - [ ] go
          - [ ] json
-- [x] Brave browser
-- [x] Zoom meeting
+- [x] Brave browser (Change to Flatpak in version 2.0)
+- [x] Zoom meeting (Change to Flatpak in version 2.0)
