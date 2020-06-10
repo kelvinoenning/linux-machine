@@ -33,6 +33,23 @@ printStage "Install >> git"
 
 apt install git -y
 
+printStage "Install >> asdf"
+
+apt-get install dirmngr -y
+apt-get install gpg -y
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
+echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+source ~/.bashrc
+
+printStage "Install >> asdf >> nodejs"
+
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+asdf install nodejs 14.4.0
+asdf global nodejs 14.4.0
+
 printStage "Install >> nvim"
 
 rm /usr/bin/nvim

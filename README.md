@@ -13,8 +13,8 @@ This configuration does not represent the configuration of my current machine, a
 - [x] curl
 - [x] git
 - [x] silversearcher-ag
-- [ ] asdf
-   - [ ] nodejs | yarn 
+- [x] asdf
+   - [x] nodejs 
 - [x] NeoVim
    - [x] Some configurations
    - [x] Plug
