@@ -70,15 +70,3 @@ curl -fLo /home/${SUDO_USER}/.config/nvim/autoload/plug.vim --create-dirs \
 printStage "Install >> Silver Searcher"
 
 apt install silversearcher-ag -y
-
-printStage "Install >> Brave browser"
-
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-update
-apt install brave-browser -y
-
-printStage "Install >> Zoom"
-
-wget -O /tmp/zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
-apt install /tmp/zoom.deb -y
