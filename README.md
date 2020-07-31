@@ -14,7 +14,8 @@ This configuration does not represent the configuration of my current machine, a
 - [x] git
 - [x] silversearcher-ag
 - [x] asdf
-   - [x] nodejs 
+   - [x] nodejs 14.4.0
+   - [x] golang 1.14.6
 - [x] NeoVim
    - [x] Some configurations
    - [x] Plug

@@ -50,6 +50,12 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs 14.4.0
 asdf global nodejs 14.4.0
 
+printStage "Install >> asdf >> golang"
+
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+asdf install golang 1.14.6
+asdf global golang 1.14.6
+
 printStage "Install >> nvim"
 
 rm /usr/bin/nvim
