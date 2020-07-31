@@ -6,6 +6,9 @@ This repository represents an automatic installation of a working instance.
 
 This configuration does not represent the configuration of my current machine, and this repository is being created to help anyone who wants to quickly have a working instance previously configured.
 
+## How to use?
+
+Run the `install.sh` file to install all settings.
 
 ## Configs
 
